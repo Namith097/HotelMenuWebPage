@@ -1,0 +1,140 @@
+@include sm{
+  .header{
+    padding:$zero-padding;
+    &__content{
+      justify-content: center !important;
+    }
+    &__logo-block{
+      box-shadow: $box-shadow-sm;
+      background-color:$header-logo-bg-color;
+      z-index: 1;
+      
+    }
+   
+    &__location{
+      box-shadow:$box-shadow-sm;
+      background-color:$header-location-bg-color;
+     
+    }
+    &__display{
+      display: block;
+    }
+    &__image{
+      @include dimension(100%, 350px)
+    }
+
+  }
+  .menu{
+    z-index: 1;
+    margin-top: -40px;
+    position: relative;
+    background-color:$header-logo-bg-color;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    
+  }
+    
+  .navbar{
+    display:flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .navbar__item{
+    @include list-item(100%,30px);
+  }
+  .card-image{
+    @include dimension(100%, 300px)
+  }
+  .text-wrap{
+    inline-size: 400px;
+    overflow-wrap: break-word;
+  
+  }
+  
+  
+
+}
+
+
+
+
+@include md{
+  .header{
+    &__content{
+      justify-content: space-between !important;
+    }
+    &__logo-block{
+      justify-content: start;
+    }
+    &__location{
+      justify-content: end;
+    }
+    &__display{
+      display:none;
+    }
+    &__image{
+      @include dimension(100%, 300px)
+    }
+
+
+  }
+  
+  .navbar__item{
+    @include list-item(200px,30px);
+  }
+  .card-image{
+    @include dimension(100%, 380px)
+  }
+  .card-image{
+    @include dimension(100%, 300px)
+  }
+
+  .menu{
+    z-index: 1;
+    margin-top: -40px;
+    position: relative;
+    background-color:$header-logo-bg-color;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    
+  }
+  
+
+}
+
+@include lg{
+  .header{
+    &__content{
+      justify-content: space-between !important;
+    }
+    &__logo-block{
+      justify-content: start;
+    }
+    &__location{
+      justify-content: end;
+    }
+    &__display{
+      display:none;
+    }
+    &__image{
+      @include dimension(100%, 400px)
+    }
+
+  }
+  .navbar__item{
+    @include list-item(250px,30px);
+  }
+  .card-image{
+    @include dimension(100%, 400px)
+  }
+  .menu{
+    z-index: 1;
+    margin-top: -92px;
+    position: relative;
+    background-color:$header-logo-bg-color;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    
+  }
+}
+

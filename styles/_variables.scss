@@ -1,0 +1,83 @@
+//colors
+$primary-color:#9356DC;
+$secondary-color:#FF79DA ;
+$tertiary-color:#99E2D0;
+$subtitle-color:grey;
+$white-color: white;
+$primary-bg-color:#EEE4F9;
+$description-color:#7F7E81;
+$anchor-color:black;
+$pale-grey:#EDECEF;
+$header-logo-bg-color: #F3F3F3;
+$header-location-bg-color:#dcdbdb;
+$black-shade:#4A4949;
+$green-color: #32aa4a;
+
+
+$colors : (
+  "primary":$primary-color,
+  "secondary": $secondary-color,
+  "tertiary-color": $tertiary-color,
+  "primary-bg-color":#EEE4F9,
+  "border": #ddd,
+  "white": white,
+  "pale-grey": #eaeaed,
+  "light-grey": $description-color,
+  "black": black,
+  "bg-colour": #F3F3F3,
+  "black-shade":#4A4949,
+  "subtitle-color":grey,
+);
+
+$justify-content: (
+  "center": center,
+  "start": start,
+  "space-between": space-between,
+   "end": end,
+);
+
+$base-gradient : linear-gradient(170deg, $secondary-color,$primary-color);
+//spacing
+$base-padding : 5px;
+$base-margin :5px;
+
+$zero-padding:0px;
+$padding-m: 20px;
+$padding-lg: 20px;
+$padding-xlg:25px;
+$padding-xxl:30px;
+
+//margin
+$margin-m: 8px;
+$margin-lg: 10px;
+$margin-xlg:15px;
+$margin-xxl:20px;
+
+//borders
+$base-border-thickness: 1px;
+$base-border-radius:20px;
+
+$border-radius-m:25px;
+
+//box-shadows
+$base-box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
+$box-shadowing-sx: 2px 3px 4px -10px rgba(0,0,0,0.3);
+$box-shadow-sm: 3px 4px 5px rgba(0,0,0,0.2);
+
+//base font size
+$base-font-size-xs: .75rem;
+$base-font-size: 1rem;
+$font-size-sm: $base-font-size * 0.75;
+$font-size-md: $base-font-size * 1.25;
+$font-size-lg: $base-font-size * 1.5;
+$font-size-xl: $base-font-size * 2;
+$font-size-xxl: $base-font-size * 3;
+      
+//base-gap
+$base-gap: 10px;
+
+
+
+.gap{
+  gap:5px;
+}

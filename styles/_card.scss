@@ -1,0 +1,25 @@
+.card{
+  display:block;
+  border-radius: $base-border-radius;
+  box-shadow: $base-box-shadow;
+  overflow: hidden;
+
+
+  .card-title{
+    font-size:$font-size-lg;
+    padding-bottom: $base-padding;
+    font-weight: bold;
+    color: black;
+  }
+
+  .card-body{
+    font-size: $base-font-size;
+    color: $description-color;
+  }
+  .card-attribute{
+    position: relative;
+  }
+}
+.number-icon{
+  @include number();
+}

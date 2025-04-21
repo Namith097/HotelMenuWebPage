@@ -1,0 +1,108 @@
+@mixin btn($font, $padding){
+  padding:$padding;
+  border-radius: $base-border-radius*2;
+  border: none;
+  box-shadow:$base-box-shadow;
+  color:$white-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:$base-gradient;
+  &:hover{
+    opacity: .94;
+    transition: opacity 250ms;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition:  box-shadow 250ms;
+    
+  }
+
+}
+
+
+@mixin btn-icon{
+  width: 80px;
+  height: 30px;
+  background-color:$tertiary-color;
+  color:$green-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+
+}
+.btn-icon{
+  @include btn-icon();
+}
+.overlay{
+  position: absolute; 
+  display: flex;
+  top:5%;
+  left:80%;
+}
+
+
+.btn-secondary{
+  @include btn($base-padding,$base-margin);
+  @include dimension(150px,35px);
+  background: linear-gradient(170deg, $secondary-color,$primary-color);
+  
+}
+@include sm{
+  .btn-primary{
+    @include btn($base-padding,$base-margin);
+    @include dimension(210px, 50px);
+    font-size: 15px;
+    background: linear-gradient(170deg, $secondary-color,$primary-color);
+    }
+}
+@include md{
+  .btn-primary{
+    @include btn($base-padding,$base-margin);
+    @include dimension(250px, 55px);
+    font-size: 20px;
+    background: linear-gradient(170deg, $secondary-color,$primary-color);
+    }
+}
+
+@include lg{
+  .btn-primary{
+    @include btn($base-padding,$base-margin);
+    @include dimension(250px, 55px);
+    font-size: 20px;
+    background: linear-gradient(170deg, $secondary-color,$primary-color);
+    }
+}
+
+.fa.fa-hover-hidden {
+  color: $black-shade;
+  
+}
+.fa.fa-hover-show {
+  display: inline;
+  background: -webkit-linear-gradient(60deg, $secondary-color, $primary-color) 0% 0% / 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+* > .fa.fa-hover-show,
+*:hover > .fa.fa-hover-hidden {
+    display: none;
+    animation: heart 2s;
+}
+
+*:hover > .fa.fa-hover-show {
+    display: inline-block;
+   
+}
+@keyframes heart {
+  0%{
+    font-size: large;
+  }
+  
+  100%{
+    font-size: xx-large;
+  }
+  
+}
+
